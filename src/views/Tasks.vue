@@ -3,7 +3,7 @@
   <template v-else>
     <h3 class="text-white">Всего активных задач: {{ activeTask }}</h3>
     <!-- <task v-for = "task in tasksList" :key="task.title" :task="task"></task> -->
-    <div class="card" v-for = "task in tasksListgit init" :key="task.id">
+    <div class="card" v-for = "task in tasksList" :key="task.id">
       <h2 class="card-title">
         {{ task.title }}
         <AppStatus :type="task.status" />
